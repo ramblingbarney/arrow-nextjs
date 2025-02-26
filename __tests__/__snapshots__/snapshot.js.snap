@@ -5,23 +5,84 @@ exports[`Page Snapshot renders homepage unchanged 1`] = `
   <div
     class="container"
   >
-    <img
-      alt="React logo"
-      class="logo react logo-clockwise"
-      data-nimg="1"
-      decoding="async"
-      height="10"
-      style="color: transparent;"
-      width="10"
-    />
-    <h1
-      class="title"
+    <div
+      class="sidebar"
     >
-      Time Mouse Stationary 
-      <span>
-        0
-      </span>
-    </h1>
+      <div
+        class="HAMBURGER-ICON space-y-2"
+        data-testid="hamburger-icon"
+      >
+        <span
+          class="block h-0.5 w-8 animate-pulse bg-gray-600"
+        />
+        <span
+          class="block h-0.5 w-8 animate-pulse bg-gray-600"
+        />
+        <span
+          class="block h-0.5 w-8 animate-pulse bg-gray-600"
+        />
+      </div>
+      <div
+        class="hidden"
+      >
+        <ul
+          class="flex flex-col items-center justify-between min-h-[250px]"
+        >
+          <li
+            class="border-b border-gray-600 my-8 uppercase"
+          >
+            <button
+              class="nav-text"
+            >
+              Turn Direction 
+              Off
+            </button>
+          </li>
+          <li
+            class="border-b border-gray-600 my-8 uppercase"
+          >
+            <button
+              class="nav-text"
+            >
+              Turn MouseMove 
+              Off
+            </button>
+          </li>
+          <li
+            class="border-b border-gray-600 my-8 uppercase"
+          >
+            <button
+              class="nav-text"
+            >
+              Turn MouseTime 
+              Off
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="logo"
+    >
+      <img
+        alt="React logo"
+        class="logo react logo-clockwise"
+        data-nimg="1"
+        decoding="async"
+        height="50"
+        style="color: transparent;"
+        width="50"
+      />
+      <h1
+        class="title"
+      >
+        Time Mouse Stationary
+         
+        <span>
+          0
+        </span>
+      </h1>
+    </div>
   </div>
 </div>
 `;
