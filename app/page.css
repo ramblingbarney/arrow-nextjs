@@ -2,6 +2,14 @@
   padding: 5em;
   border: #61dafbaa 1px solid;
   background-color: white;
+  display: table-row;
+}
+
+.sidebar {
+  padding: 5em;
+  border: #61dafbaa 1px solid;
+  background-color: white;
+  display: table-cell;
 }
 
 .logo {
@@ -9,6 +17,7 @@
   --padding: 1.5em;
   --will-change: filter;
   --transition: filter 300ms;
+  display: table-cell;
 }
 
 .logo-clockwise {
@@ -45,4 +54,27 @@
   font-size: 2em;
   margin: 0.5em;
   color: black;
+}
+
+.hideMenuNav {
+  display: none;
+}
+.showMenuNav {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-text {
+  color: black;
+  text-decoration: none;
 }
