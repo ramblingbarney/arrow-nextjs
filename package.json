@@ -11,6 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "babel-loader": "^9.2.1",
     "identity-obj-proxy": "^3.0.0",
     "next": "15.1.7",
     "react": "^19.0.0",
