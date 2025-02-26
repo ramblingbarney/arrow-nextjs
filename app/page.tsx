@@ -12,11 +12,23 @@ export default function Home() {
     y: number;
   }>({ x: 10, y: 10 });
 
+  const [lastTimeStamp, setLastTimeStamp] = useState<number>(0);
+  const [displaySeconds, setDisplaySeconds] = useState<number>(0);
+
   const handleLogoClick = () => {
     setDirection(!direction);
   };
 
+  const calculateDisplaySeconds = () => {
+    const currentTimeStamp = new Date().getTime();
+    const timeDifference = currentTimeStamp - lastTimeStamp;
+    const seconds = Math.floor(timeDifference / 1000);
+    setDisplaySeconds(seconds);
+    setLastTimeStamp(currentTimeStamp);
+  };
+
   const handleMouseMove = (e: MouseEvent) => {
+    calculateDisplaySeconds();
     if (target.current) {
       const rect = target.current.getBoundingClientRect();
       setImageDimensions({
@@ -45,6 +57,9 @@ export default function Home() {
         alt="React logo"
         onClick={handleLogoClick}
       />
+      <h1 className="title">
+        Time Mouse Stationary <span>{displaySeconds}</span>
+      </h1>
     </div>
   );
 }

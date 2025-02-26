@@ -40,3 +40,9 @@
     transform: rotate(-360deg);
   }
 }
+
+.title {
+  font-size: 2em;
+  margin: 0.5em;
+  color: black;
+}

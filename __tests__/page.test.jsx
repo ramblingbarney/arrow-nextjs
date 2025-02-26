@@ -38,4 +38,25 @@ describe("Page", () => {
     expect(image.width).toBe(50);
     expect(image.height).toBe(50);
   });
+
+  it("renders time exlapsed since last mouse move event", async () => {
+    render(<Page />);
+    const image = screen.getByRole("img");
+
+    const currentTimeStamp = new Date().getTime();
+    fireEvent.mouseMove(image, {
+      clientX: 500,
+      clientY: 500,
+    });
+
+    await new Promise((f) => setTimeout(f, 1000));
+
+    fireEvent.mouseMove(image, {
+      clientX: 450,
+      clientY: 450,
+    });
+
+    const text = screen.getByText("1");
+    expect(text).toBeInTheDocument();
+  });
 });
