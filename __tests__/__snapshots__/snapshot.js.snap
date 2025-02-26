@@ -2,13 +2,17 @@
 
 exports[`Page Snapshot renders homepage unchanged 1`] = `
 <div>
-  <div>
+  <div
+    class="container"
+  >
     <img
       alt="React logo"
       class="logo react logo-clockwise"
       data-nimg="1"
       decoding="async"
+      height="10"
       style="color: transparent;"
+      width="10"
     />
   </div>
 </div>

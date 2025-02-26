@@ -1,3 +1,9 @@
+.container {
+  padding: 5em;
+  border: #61dafbaa 1px solid;
+  background-color: white;
+}
+
 .logo {
   --height: 6em;
   --padding: 1.5em;
