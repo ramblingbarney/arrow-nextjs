@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import SideBar from "./components/sidebar";
+import Sidebar from "./components/sidebar";
 import "./page.css";
 import SpinningIcon from "./components/spinning-icon";
 
@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div className="container">
-      <SideBar
+      <Sidebar
         isNavOpen={isNavOpen}
         isDirectionActive={isDirectionActive}
         isMouseMoveActive={isMouseMoveActive}

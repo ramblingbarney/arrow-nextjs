@@ -14,7 +14,7 @@ interface SidebarProps {
   setIsMouseTimeActiveFunc: SetStateFunction<boolean>;
 }
 
-export default function SideBar({
+export default function Sidebar({
   isNavOpen,
   setIsNavOpenFunc,
   isDirectionActive,
