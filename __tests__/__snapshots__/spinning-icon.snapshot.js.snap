@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Snapshot renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="logo"
+  >
+    <img
+      alt="React logo"
+      class="logo react logo-clockwise"
+      data-nimg="1"
+      decoding="async"
+      height="50"
+      style="color: transparent;"
+      width="50"
+    />
+    <h1
+      class="title"
+    >
+      Time Mouse Stationary
+       
+      <span>
+        0
+      </span>
+    </h1>
+  </div>
+</div>
+`;

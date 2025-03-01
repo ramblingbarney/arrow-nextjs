@@ -6,24 +6,24 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 For this position we are asking all promising applicants to complete a short mini-project using React before we
 move on to interviews.
 For this please could you complete the following instructions:
+
 1. Use Vite to set up a fresh React project and remove all of the code except the react icon. Add it as the
-initial commit to a git repository.
+   initial commit to a git repository.
 2. Change the code so that the react icon rotates and the direction reverses each time the user clicks it.
 3. Change the code to adjust the size of the react icon depending on the position of the cursor on the
-page.
+   page.
 4. Change the code so that the text under the icon displays the amount of time the mouse has been
-WITHIN the visible page, but NOT moving.
+   WITHIN the visible page, but NOT moving.
 5. Add a sidebar that can be shown/hidden where any of the previous changes can be switched on or off.
-I have deliberately left the instructions a bit vague so use your judgement where the details are lacking.....
+   I have deliberately left the instructions a bit vague so use your judgement where the details are lacking.....
 
 ## Why NextJs
 
-Jest setup documentation for NextJs exists, after spending hours dealing with cryptic error messages because I don't use Vite for my projects I went with a proven framework.  I could now transfer my setup learned knowledge to Vite for the future.
+Jest setup documentation for NextJs exists, after spending hours dealing with cryptic error messages because I don't use Vite for my projects I went with a proven framework. I could now transfer my setup learned knowledge to Vite for the future.
 
 ## If this was a basis for an ongoing project
 
-- Sidebar and Rotating Icon would be moved to components
-- The parent page would hold the state for the buttons
+- Create unit tests for components
 - Effort would be put into making it look pretty
 
 ## Getting Started
