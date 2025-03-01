@@ -1,14 +1,14 @@
 "use client";
-import { useState } from "react";
+import React from "react";
 import Sidebar from "./components/sidebar";
 import "./page.css";
 import SpinningIcon from "./components/spinning-icon";
 
 export default function Home() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isDirectionActive, setIsDirectionActive] = useState(false);
-  const [isMouseMoveActive, setIsMouseMoveActive] = useState(false);
-  const [isMouseTimeActive, setIsMouseTimeActive] = useState(false);
+  const [isNavOpen, setIsNavOpen] = React.useState(false);
+  const [isDirectionActive, setIsDirectionActive] = React.useState(false);
+  const [isMouseMoveActive, setIsMouseMoveActive] = React.useState(false);
+  const [isMouseTimeActive, setIsMouseTimeActive] = React.useState(false);
 
   return (
     <div className="container">
