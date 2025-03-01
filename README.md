@@ -23,7 +23,6 @@ Jest setup documentation for NextJs exists, after spending hours dealing with cr
 
 ## If this was a basis for an ongoing project
 
-- Create unit tests for components
 - Effort would be put into making it look pretty
 
 ## Getting Started
